@@ -1,0 +1,10 @@
+/*Adding a font is crucial to every website.
+You can also host and add custom fonts check out Adding a custom font.css*/
+* {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/*You can also add specific fonts to specific elements.*/
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}

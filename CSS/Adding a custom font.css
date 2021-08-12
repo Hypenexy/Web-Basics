@@ -1,0 +1,11 @@
+/*You can name the font whatever you want.*/
+@font-face {
+  font-family: yourPerfectFontName;
+  src: url(some_font.woff);
+}
+
+/*To use it just type it's name!*/
+
+* {
+	font-family: yourPerfectFontName;
+}
