@@ -1,0 +1,12 @@
+.hiddendiv{
+	display: none;
+}
+
+/*The example above completely removes the visibility 
+  and interactability with the object*/
+  
+.invisiblediv{
+    visibility: hidden;
+	/*or*/
+	opacity: 0; /*Default is 1, you can also choose between like 0.3*/
+}
