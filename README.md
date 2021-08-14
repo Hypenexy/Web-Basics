@@ -6,5 +6,5 @@ But if you already know some stuff you can use this as a reminder to how to do s
 I've included a short tutorial on how to _try/experiment with_ the snippets.
 
 #Installation
-You can click [Code] -> [Download ZIP]
+You can click **[Code]** -> **[Download ZIP]**
 Save it and use it however you like free of license.
