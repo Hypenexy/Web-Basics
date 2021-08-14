@@ -6,7 +6,11 @@
 	<title>Snippets Tutorial</title>
 </head>
 <style>
-body{margin:0;background: #f0f0f0}
+body{margin:0;background: #f0f0f0;
+		background-image: url('https://midelight.net/img/skyeyes.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;}
 * {
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-weight: 300;
@@ -39,7 +43,7 @@ textarea:focus{
 </style>
 <body>
 	<div class="mdblock main">
-		<h1 class="text">How to test snippets.</h1>
+		<h1 style="text-align: center" class="text">How to test snippets.</h1>
 		<h2 class="text">Trying out CSS snippets:</h2>
 		<textarea id="csstextarea">
 <!DOCTYPE html>
@@ -56,7 +60,7 @@ textarea:focus{
 	}
 	/*This is from Image background.css*/
 	.somediv {
-		background-image: url('https://midelight.net/img/skyeyes.png');
+		background-image: url('https://midelight.net/img/skyeyesb2.png');
 		
 		/*You can also use these for the image.*/
 		background-repeat: no-repeat;
@@ -72,14 +76,54 @@ textarea:focus{
 </body>
 
 </html></textarea>
-		<div class="preview" id="cssexample">
+		<h2 class="text">Preview:</h2>
+		<div class="preview" style="height:100%;" id="cssexample">
 		
 		</div>
-		<textarea disabled style="height:100px; resize: none">So basically you can put the css code in a <style> element and it will work. The recommended method is using external css which you can do with:
+		<textarea disabled style="height:100px; resize: none">So basically you can put the CSS code in a <style> element and it will work. The recommended method is using an external CSS file which you can do with:
 		<link rel="stylesheet" href="style.css">
 		</textarea>
+
+		<h2 class="text">Trying out JavaScript snippets:</h2>
+		<textarea id="javascripttextarea">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My awesome javascript</title>
+</head>
+<body>
+	<a id="outputtext"></a>
+	
+	<script>
+		var now = new Date().toLocaleString();
 		
-		
+		//Then to display it you can either use:
+		console.log("now")
+		//or
+		document.getElementById('outputtext').innerHTML = "hu";
+	</script>
+</body>
+</html></textarea>
+		<h2 class="text">Output:</h2>
+		<div class="preview" style="height:100%;" id="javascriptexample">
+			<a id="outputtext"></a>
+			
+			<script>
+				var now = new Date().toLocaleString();
+
+				//Then to display it you can either use:
+				console.log(now)
+				//or
+				document.getElementById('outputtext').innerHTML = now;
+			</script>
+		</div>
+		<textarea disabled style="height:210px; resize: none">Put all the code in a <script> element and let the browser do the rest of the magic. Again.. the recommended method is using an external JavaScript file, you can do that with:
+		<script src="script.js"></script>
+
+Friendly reminder to always put your JavaScript code/file at the end of your site (just before the </body> tag)! All elements should be loaded first to tamper with them using JavaScript.
+		</textarea>
 		
 	</div>
 	
@@ -87,6 +131,8 @@ textarea:focus{
 	<script>
 		var input1 = document.getElementById('csstextarea');
 		var preview1 = document.getElementById('cssexample');
+		var input2 = document.getElementById('javascripttextarea');
+		var preview2 = document.getElementById('javascriptexample');
 
 		input1.addEventListener('input', updateValue1);
 
@@ -94,6 +140,12 @@ textarea:focus{
 		  preview1.innerHTML = e.target.value;
 		}
 		preview1.innerHTML = input1.value;
+		
+		input2.addEventListener('input', updateValue2);
+
+		function updateValue2(e) {
+		  preview2.innerHTML = e.target.value;
+		}
 	</script>
 </body>
 </html>
