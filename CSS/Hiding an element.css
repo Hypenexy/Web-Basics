@@ -1,12 +1,28 @@
+/*
+  The "display: none" property makes it so it doesn't take space
+  in the page and is not visible.
+*/
+
 .hiddendiv{
 	display: none;
 }
 
-/*The example above completely removes the visibility 
-  and interactability with the object*/
-  
+/*
+  The "visibility: hidden" makes it so it takes up the same space,
+  but is neither visible or interactable.
+  For absolute positioned popups - use visibility cause it's easier to animate!
+*/
+
 .invisiblediv{
-    visibility: hidden;
-	/*or*/
-	opacity: 0; /*Default is 1, you can also choose between like 0.3*/
+	visibility: hidden;
+}
+
+/*
+  The "opacity: 0" makes it so it's invisible but interactable if
+  it's left interactable (if it's not "pointer-events: none").
+*/
+
+.opaquediv{
+	opacity: 0; /*Default is 1 (for 100%), you can also choose between like 0.3 (30% opacity)*/
+	/*If you add "pointer-events: none;" it will be the same as visibility: hidden I believe.*/
 }
