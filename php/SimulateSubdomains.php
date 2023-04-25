@@ -1,10 +1,16 @@
 <?php
 // Simulate subdomains
 // This is very stupid how will client download assets??
-// USE RewriteEngine INSTEAD OF THIS!!!
+// USE RewriteEngine INSTEAD OF THIS!!! Here's how to do it in .htaccess for apache!
+
 // RewriteEngine On
-// RewriteCond %{REQUEST_FILENAME} !-f
-// RewriteRule ^([^\.]+)$ index.php?page=$1 [NC,L]
+//
+// # localhost - homepage
+// RewriteCond %{HTTP_HOST} ^localhost [NC]
+// RewriteRule !^homepage homepage%{REQUEST_URI} [L]
+
+
+
 // Read comment below it's important for subdomains.
 
 $subdomains = [ // Not this comment, but there can be created an array with keys and values more natively.
