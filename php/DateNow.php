@@ -1,4 +1,4 @@
 <?php
-$datenow=strtotime("now");
+$datenow = strtotime("now");
 
 /*For date formats view DateNowFormats.php*/

@@ -1,4 +1,4 @@
-function selectlast(select){
+function selectLast(select){
     select.selectedIndex = select.length-1
 }
-//selectlast(document.getElementById("createcloudfolderselect"))
+//selectLast(document.getElementById("createcloudfolderselect"))

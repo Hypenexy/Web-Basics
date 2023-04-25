@@ -4,4 +4,4 @@ setTimeout(function () {
 	console.log("back!");
 }, 1000);
 	
-//Time is measured in ms
+// Time is measured in milliseconds (ms)

@@ -37,7 +37,7 @@ function foreachDelayed(array, action, delay, startInstant){
 
 foreachDelayed([0,2,3], function(item){console.log(item)}, 500)
 
-//for more readability
+// for more readability
 
 function outputconsole(item){
     console.log(item)
@@ -56,7 +56,7 @@ function forEachsomeArray(){
         text.innerText = someArray[i]
         document.body.appendChild(text)
 
-        //document.write(someArray[i])
+        // document.write(someArray[i])
     
         i++
         

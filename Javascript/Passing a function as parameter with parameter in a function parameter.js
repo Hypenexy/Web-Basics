@@ -17,7 +17,7 @@ function ButtonEvent(element, action, param){
 
 
 
-//So in short, just
+// So in short, just
 
 buttonelement.onclick = function(){
 	SomeFunction("first parameter lol", function(){ return AnotherFunction(varlol); })

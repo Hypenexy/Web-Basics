@@ -1,4 +1,4 @@
-//These are some of the formats you can use on time.
+// These are some of the formats you can use on time.
 var now = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit" });
 // 01:15 AM
 

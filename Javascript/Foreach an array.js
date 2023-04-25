@@ -6,9 +6,9 @@ function somFunction(item){
 	console.log(item + " ")
 }
 
-//Should output: hey how are you 
+// Should output: hey how are you 
 
-//Alternative method:
+// Alternative method:
 
 fontAvailable = ["Arial", "Roboto"];
 
@@ -18,5 +18,5 @@ function indexFonts(){
   }
 }
 
-//Should output when called: ArialRoboto
-//You can also do it outside the function!
+// Should output when called: ArialRoboto
+// You can also do it outside the function!

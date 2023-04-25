@@ -1,5 +1,5 @@
 <?php
-$time = date("g:i A", $currentTime)
+$time = date("g:i A", $currentTime);
 // 3:32 AM
 
 $time = date("F j, Y, g:i a");
